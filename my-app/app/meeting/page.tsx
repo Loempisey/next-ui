@@ -4,11 +4,11 @@ import { title } from "@/components/primitives";
 import { Button } from "@nextui-org/button";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure, Checkbox, Input, Link} from "@nextui-org/react";
 
-export default function DocsPage() {
+export default function MeetingPage() {
 	const {isOpen, onOpen, onOpenChange} = useDisclosure();
 	return (
 		<>
-			<Button color="primary" onPress={onOpen}>Create Meeting</Button>
+			<Button color="primary" onPress={onOpen} variant="shadow" radius="full">Get Started</Button>
 			<Modal isOpen={isOpen} onClose={onOpenChange} placement="top-center">
 				<ModalContent>
 					{(onClose)=>(
@@ -24,7 +24,7 @@ export default function DocsPage() {
 									</Link>
 								</div>
 								<div className="text-center">
-									<Link color="primary" href="#">Dont have an account? Register</Link>
+									<Link color="primary" href="/signup">Dont have an account? Register</Link>
 								</div>
 							</ModalBody>
 							<ModalFooter>

@@ -1,4 +1,4 @@
-export default function MeetingLayout({
+export default function MeetingLyout({
 	children,
 }: {
 	children: React.ReactNode;

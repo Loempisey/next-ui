@@ -6,6 +6,7 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import SignInPage from "./signin/page";
 
 export default function Home() {
 	return (
@@ -23,14 +24,15 @@ export default function Home() {
 			</div>
 
 			<div className="flex gap-3">
-				<Link
+				{/* <Link
 					isExternal
 					as={NextLink}
 					href='/signin'
 					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
 				>
 					Get Started 
-				</Link>
+				</Link> */}
+				<SignInPage />
 				<Link
 					isExternal
 					as={NextLink}
