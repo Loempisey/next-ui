@@ -14,7 +14,6 @@ import {
   Link,
 } from "@nextui-org/react";
 import { useSession, signIn } from "next-auth/react";
-import { TwitterIcon } from "../Icon";
 
 export default function SignInPage() {
   const session = useSession();

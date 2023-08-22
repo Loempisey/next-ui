@@ -1,14 +1,12 @@
-
 "use client";
 
 import React from "react";
-import Signin from "@/components/auth/SignIn";
+import Form from "@/components/auth/Form";
 
 export default function SignInPage() {
-	return (
-		<div>
-			<Signin />
-		</div>
-		
-	);
+  return (
+    <div>
+      <Form />
+    </div>
+  );
 }

@@ -24,14 +24,6 @@ export default function Home() {
 			</div>
 
 			<div className="flex gap-3">
-				{/* <Link
-					isExternal
-					as={NextLink}
-					href='/signin'
-					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
-				>
-					Get Started 
-				</Link> */}
 				<SignInPage />
 				<Link
 					isExternal
